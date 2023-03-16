@@ -1,0 +1,32 @@
+<html>
+    <head>
+
+    </head>
+    <body>
+        <script>
+        
+        function abundante(n){
+                    n = i;
+                    let suma = 0;
+                   for (let x = 0; x < n; x++) {
+                        if (n % x == 0){
+                        suma += x;
+                        }
+                   }
+                   if (suma > n){
+                        return true;                    
+                   }
+                   
+               }
+        let num, i;
+          num = parseInt(prompt("Igrese nota : "));  
+          for(i = 0; i <= num; i++){
+                if(abundante(i)){
+                    document.write("El numero " + i + " es un numero abundante" + "<br>");
+                }
+            }
+               
+          
+        </script>
+    </body>
+</html>
